@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Function:</strong>
+  <%= @person.function %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @person.url_image, size: 50 %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %> |
+<%= link_to 'Print' %>
