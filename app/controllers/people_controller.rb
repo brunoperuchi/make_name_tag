@@ -1,5 +1,6 @@
 class PeopleController < ApplicationController
   before_action :set_person, only: %i[ show edit update destroy ]
+  before_action :set_role_options, only: [:new, :create, :edit, :update]
 
   # GET /people or /people.json
   def index
@@ -58,6 +59,10 @@ class PeopleController < ApplicationController
   end
 
   private
+    def set_role_options
+      @set_role_options = Role.all.pluck(:description, :id)
+    end
+  
     # Use callbacks to share common setup or constraints between actions.
     def set_person
       @person = Person.find(params[:id])
@@ -65,6 +70,6 @@ class PeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def person_params
-      params.require(:person).permit(:name, :function, :url_image)
+      params.require(:person).permit(:description, :url_image, :role_id)
     end
 end

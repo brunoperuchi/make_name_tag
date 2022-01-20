@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @roles.model_name.human(count: 2) %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= @roles.human_attribute_name(:description) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @roles.each do |role| %>
+      <tr>
+        <td><%= role.description %></td>
+        <td><%= link_to t('links.show'), role %></td>
+        <td><%= link_to t('links.edit'), edit_role_path(role) %></td>
+        <td><%= link_to t('links.delete'), role, method: :delete, data: { confirm: t('message.confirm') } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('new.role'), new_role_path %>

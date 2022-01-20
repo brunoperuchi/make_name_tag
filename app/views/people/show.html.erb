@@ -1,20 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @person.name %>
+  <strong><%= @person.human_attribute_name(:description) %></strong>
+  <%= @person.description %>
 </p>
 
 <p>
-  <strong>Function:</strong>
-  <%= @person.function %>
+  <strong><%= @person.human_attribute_name(:url_image) %></strong>
+  <%= @person.url_image %>
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= image_tag @person.url_image, size: 50 %>
+  <strong><%= @person.human_attribute_name(:role_id) %></strong>
+  <%= @person.role %>
 </p>
 
-<%= link_to 'Edit', edit_person_path(@person) %> |
-<%= link_to 'Back', people_path %> |
-<%= link_to 'Print' %>
+<%= link_to t('links.edit'), edit_person_path(@person) %> |
+<%= link_to t('links.back'), people_path %>

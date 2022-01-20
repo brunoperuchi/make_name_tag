@@ -14,8 +14,8 @@ class PeopleTest < ApplicationSystemTestCase
     visit people_url
     click_on "New Person"
 
-    fill_in "Function", with: @person.function
-    fill_in "Name", with: @person.name
+    fill_in "Description", with: @person.description
+    fill_in "Role", with: @person.role_id
     fill_in "Url image", with: @person.url_image
     click_on "Create Person"
 
@@ -27,8 +27,8 @@ class PeopleTest < ApplicationSystemTestCase
     visit people_url
     click_on "Edit", match: :first
 
-    fill_in "Function", with: @person.function
-    fill_in "Name", with: @person.name
+    fill_in "Description", with: @person.description
+    fill_in "Role", with: @person.role_id
     fill_in "Url image", with: @person.url_image
     click_on "Update Person"
 

@@ -1,0 +1,15 @@
+pt-BR:
+  links:
+    show: "Mostrar"
+    edit: "Editar"
+    delete: "Apagar"
+    back: "Voltar"
+  new:
+    person: "Nova Pessoa"
+    role: "Nova Função"
+  edit:
+    person: "Editando Pessoa"
+    role: "Editando Função"
+  message:
+    select: "Selecione"
+    confirm: "Você tem certeza?"

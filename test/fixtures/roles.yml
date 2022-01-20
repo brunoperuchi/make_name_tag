@@ -2,10 +2,6 @@
 
 one:
   description: MyString
-  url_image: MyString
-  role: one
 
 two:
   description: MyString
-  url_image: MyString
-  role: two

@@ -17,7 +17,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
 
   test "should create person" do
     assert_difference('Person.count') do
-      post people_url, params: { person: { function: @person.function, name: @person.name, url_image: @person.url_image } }
+      post people_url, params: { person: { description: @person.description, role_id: @person.role_id, url_image: @person.url_image } }
     end
 
     assert_redirected_to person_url(Person.last)
@@ -34,7 +34,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update person" do
-    patch person_url(@person), params: { person: { function: @person.function, name: @person.name, url_image: @person.url_image } }
+    patch person_url(@person), params: { person: { description: @person.description, role_id: @person.role_id, url_image: @person.url_image } }
     assert_redirected_to person_url(@person)
   end
 

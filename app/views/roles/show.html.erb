@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= @role.human_attribute_name(:description) %></strong>
+  <%= @role.description %>
+</p>
+
+<%= link_to t('links.edit'), edit_role_path(@role) %> |
+<%= link_to t('links.back'), roles_path %>
