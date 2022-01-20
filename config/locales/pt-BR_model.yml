@@ -10,7 +10,7 @@
     attributes:
       person:
         id: Código
-        description: Nome Completo
+        description: Nome
         url_image: Imagem
         role_id: Função
         updated_at: Atualizado em

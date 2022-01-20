@@ -1,2 +1,16 @@
 en:
-  hello: "Hello world"
+  name_app: "Make Name Tag"
+  links:
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    back: "Back"
+  new:
+    person: "New Person"
+    role: "New Role"
+  edit:
+    person: "Editing Person"
+    role: "Editing Role"
+  message:
+    select: "Select..."
+    confirm: "Are you sure?"

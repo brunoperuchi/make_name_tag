@@ -1,0 +1,22 @@
+en:
+  activerecord:
+    models:
+      person:
+        one: Person
+        other: People
+      role:
+        one: Role
+        other: Roles
+    attributes:
+      person:
+        id: Code
+        description: Name
+        url_image: Image
+        role_id: Role
+        updated_at: Updated at
+        created_at: Created at
+      role:
+        id: Code
+        description: Role Name
+        updated_at: Updated at
+        created_at: Created at

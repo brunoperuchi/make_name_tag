@@ -1,4 +1,5 @@
 pt-BR:
+  name_app: "Confecciona Crachás"
   links:
     show: "Mostrar"
     edit: "Editar"
@@ -11,5 +12,5 @@ pt-BR:
     person: "Editando Pessoa"
     role: "Editando Função"
   message:
-    select: "Selecione"
+    select: "Selecione..."
     confirm: "Você tem certeza?"

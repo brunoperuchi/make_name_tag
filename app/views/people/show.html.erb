@@ -1,18 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong><%= @person.human_attribute_name(:description) %></strong>
+  <strong><%= Person.human_attribute_name(:description) %></strong>
   <%= @person.description %>
 </p>
 
 <p>
-  <strong><%= @person.human_attribute_name(:url_image) %></strong>
+  <strong><%= Person.human_attribute_name(:url_image) %></strong>
   <%= @person.url_image %>
 </p>
 
 <p>
-  <strong><%= @person.human_attribute_name(:role_id) %></strong>
-  <%= @person.role %>
+  <strong><%= Person.human_attribute_name(:role_id) %></strong>
+  <%= @person.role.description %>
 </p>
 
 <%= link_to t('links.edit'), edit_person_path(@person) %> |

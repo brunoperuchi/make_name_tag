@@ -1,10 +1,9 @@
-<h1>Make Name Tag</h1>
-<h2>Menu</h2>
+<h1><%= t('name_app') %></h1>
 <ul>
   <li>
-    <%= link_to "People", people_path %>
+    <%= link_to Person.model_name.human(count: 2), people_path %>
   </li>
   <li>
-    <%= link_to "Roles", roles_path %>
+    <%= link_to Role.model_name.human(count: 2), roles_path %>
   </li>
 </ul>

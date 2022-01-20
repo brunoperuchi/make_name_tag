@@ -17,7 +17,7 @@
       <tr>
         <td><%= person.description %></td>
         <td><%= person.url_image %></td>
-        <td><%= person.role %></td>
+        <td><%= person.role.description %></td>
         <td><%= link_to t('links.show'), person %></td>
         <td><%= link_to t('links.edit'), edit_person_path(person) %></td>
         <td><%= link_to t('links.delete'), person, method: :delete, data: { confirm: t('message.confirm') } %></td>
@@ -28,4 +28,5 @@
 
 <br>
 
-<%= link_to t('new.person'), new_person_path %>
+<%= link_to t('new.person'), new_person_path %> |
+<%= link_to t('links.back'), welcome_index_path %>
