@@ -14,3 +14,5 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require bootstrap/dist/js/bootstrap
+//= require @popperjs/core/dist/cjs/popper
