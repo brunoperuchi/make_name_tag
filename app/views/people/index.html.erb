@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= @people.model_name.human(count: 2) %></h1>
+<h1><%= @people.model_name.human(count: @people.count) %></h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= @people.human_attribute_name(:description) %></th>

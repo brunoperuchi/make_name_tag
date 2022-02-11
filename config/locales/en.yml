@@ -12,5 +12,6 @@ en:
     person: "Editing Person"
     role: "Editing Role"
   message:
+    welcome: "Easy app to make name tag!"
     select: "Select..."
     confirm: "Are you sure?"

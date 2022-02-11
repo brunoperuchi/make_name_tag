@@ -12,5 +12,6 @@ pt-BR:
     person: "Editando Pessoa"
     role: "Editando Função"
   message:
+    welcome: "Aplicação simples para criação de crachás!"
     select: "Selecione..."
     confirm: "Você tem certeza?"
