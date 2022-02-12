@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
+<form>
+  <div class="mb-3">
+    <%= label_tag :description %>
+    <%= text_field_tag nil, @role.description, class:"form-control", disabled: true %>
+  </div>
+</form>
 
-<p>
-  <strong><%= Role.human_attribute_name(:description) %></strong>
-  <%= @role.description %>
-</p>
-
-<%= link_to t('links.edit'), edit_role_path(@role) %> |
-<%= link_to t('links.back'), roles_path %>
+<%= link_to t('links.edit'), edit_role_path(@role), class:"btn btn-primary" %>
+<%= link_to t('links.back'), roles_path, class:"btn btn-primary" %>

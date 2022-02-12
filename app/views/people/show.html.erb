@@ -1,19 +1,20 @@
 <p id="notice"><%= notice %></p>
+<form>
+  <div class="mb-3">
+    <%= label_tag :description %>
+    <%= text_field_tag nil, @person.description, class:"form-control", disabled: true %>
+  </div>
+  
+  <div class="mb-3">
+    <%= label_tag :url_image %>
+    <%= text_field_tag nil, @person.url_image, class:"form-control", disabled: true %>
+  </div>
+  
+  <div class="mb-3">
+    <%= label_tag :role_id %>
+    <%= text_field_tag nil, @person.role.description, class:"form-control", disabled: true %>
+  </div>
+</form>
 
-<p>
-  <strong><%= Person.human_attribute_name(:description) %></strong>
-  <%= @person.description %>
-</p>
-
-<p>
-  <strong><%= Person.human_attribute_name(:url_image) %></strong>
-  <%= @person.url_image %>
-</p>
-
-<p>
-  <strong><%= Person.human_attribute_name(:role_id) %></strong>
-  <%= @person.role.description %>
-</p>
-
-<%= link_to t('links.edit'), edit_person_path(@person) %> |
-<%= link_to t('links.back'), people_path %>
+<%= link_to t('links.edit'), edit_person_path(@person), class:"btn btn-primary" %>
+<%= link_to t('links.back'), people_path, class:"btn btn-primary" %>
