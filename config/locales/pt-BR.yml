@@ -5,6 +5,7 @@ pt-BR:
     edit: "Editar"
     delete: "Apagar"
     back: "Voltar"
+    submit: "Enviar"
   new:
     person: "Nova Pessoa"
     role: "Nova Função"

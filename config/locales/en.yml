@@ -5,6 +5,7 @@ en:
     edit: "Edit"
     delete: "Delete"
     back: "Back"
+    submit: "Submit"
   new:
     person: "New Person"
     role: "New Role"
