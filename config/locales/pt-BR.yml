@@ -16,3 +16,7 @@ pt-BR:
     welcome: "Aplicação simples para criação de crachás!"
     select: "Selecione..."
     confirm: "Você tem certeza?"
+  notice:
+    created: "Criado com sucesso!"
+    updated: "Atualizado com sucesso!"
+    destroyed: "Deletado com sucesso!"

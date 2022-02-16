@@ -16,3 +16,7 @@ en:
     welcome: "Easy app to make name tag!"
     select: "Select..."
     confirm: "Are you sure?"
+  notice:
+    created: "Successfully created!"
+    updated: "Successfully updated!"
+    destroyed: "Successfully deleted!"
